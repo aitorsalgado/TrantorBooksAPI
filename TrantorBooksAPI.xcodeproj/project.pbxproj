@@ -12,6 +12,7 @@
 		2A451B9D29A0E59400FB716E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9C29A0E59400FB716E /* Assets.xcassets */; };
 		2A451BA029A0E59400FB716E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */; };
 		2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA629A0E86A00FB716E /* ModelDefinition.swift */; };
+		2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA929A0EDC100FB716E /* ModelOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2A451B9C29A0E59400FB716E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A451BA629A0E86A00FB716E /* ModelDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDefinition.swift; sourceTree = "<group>"; };
+		2A451BA929A0EDC100FB716E /* ModelOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2A451BA629A0E86A00FB716E /* ModelDefinition.swift */,
+				2A451BA929A0EDC100FB716E /* ModelOperations.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */,
+				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
 			);
