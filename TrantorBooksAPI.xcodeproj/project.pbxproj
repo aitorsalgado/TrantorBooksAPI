@@ -11,6 +11,7 @@
 		2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451B9A29A0E59400FB716E /* ContentView.swift */; };
 		2A451B9D29A0E59400FB716E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9C29A0E59400FB716E /* Assets.xcassets */; };
 		2A451BA029A0E59400FB716E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */; };
+		2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA629A0E86A00FB716E /* ModelDefinition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2A451B9A29A0E59400FB716E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A451B9C29A0E59400FB716E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A451BA629A0E86A00FB716E /* ModelDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDefinition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */,
 				2A451B9A29A0E59400FB716E /* ContentView.swift */,
+				2A451BA829A0EB0E00FB716E /* Model */,
 				2A451B9C29A0E59400FB716E /* Assets.xcassets */,
 				2A451B9E29A0E59400FB716E /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A451BA829A0EB0E00FB716E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A451BA629A0E86A00FB716E /* ModelDefinition.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */,
+				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
