@@ -13,6 +13,7 @@
 		2A451BA029A0E59400FB716E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */; };
 		2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA629A0E86A00FB716E /* ModelDefinition.swift */; };
 		2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA929A0EDC100FB716E /* ModelOperations.swift */; };
+		2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A451BA629A0E86A00FB716E /* ModelDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDefinition.swift; sourceTree = "<group>"; };
 		2A451BA929A0EDC100FB716E /* ModelOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOperations.swift; sourceTree = "<group>"; };
+		2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */,
 				2A451B9A29A0E59400FB716E /* ContentView.swift */,
+				2A451BAD29A0F28900FB716E /* Network */,
 				2A451BA829A0EB0E00FB716E /* Model */,
 				2A451B9C29A0E59400FB716E /* Assets.xcassets */,
 				2A451B9E29A0E59400FB716E /* Preview Content */,
@@ -79,6 +82,14 @@
 				2A451BA929A0EDC100FB716E /* ModelOperations.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2A451BAD29A0F28900FB716E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */,
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
+				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
