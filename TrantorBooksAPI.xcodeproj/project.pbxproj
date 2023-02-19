@@ -14,6 +14,7 @@
 		2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA629A0E86A00FB716E /* ModelDefinition.swift */; };
 		2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA929A0EDC100FB716E /* ModelOperations.swift */; };
 		2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */; };
+		2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2A451BA629A0E86A00FB716E /* ModelDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDefinition.swift; sourceTree = "<group>"; };
 		2A451BA929A0EDC100FB716E /* ModelOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOperations.swift; sourceTree = "<group>"; };
 		2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPersistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */,
+				2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
+				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,4 @@ extension URL {
     static func getAuthorDetailByID(id: UUID) -> URL {
         serverURL.appending(component: "books").appending(component: "getAuthor").appending(component: "\(id)")
     }
-    
-    
 }
