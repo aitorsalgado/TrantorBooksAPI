@@ -15,6 +15,7 @@
 		2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BA929A0EDC100FB716E /* ModelOperations.swift */; };
 		2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */; };
 		2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */; };
+		2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2A451BA929A0EDC100FB716E /* ModelOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOperations.swift; sourceTree = "<group>"; };
 		2A451BAB29A0F1C600FB716E /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
 		2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPersistance.swift; sourceTree = "<group>"; };
+		2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */,
 				2A451B9A29A0E59400FB716E /* ContentView.swift */,
+				2AFAE7F829A23F1500B7FA5D /* ViewModels */,
 				2A451BAD29A0F28900FB716E /* Network */,
 				2A451BA829A0EB0E00FB716E /* Model */,
 				2A451B9C29A0E59400FB716E /* Assets.xcassets */,
@@ -93,6 +96,14 @@
 				2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		2AFAE7F829A23F1500B7FA5D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */,
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
+				2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
