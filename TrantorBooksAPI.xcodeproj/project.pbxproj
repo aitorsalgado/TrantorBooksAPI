@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A08C94429A3E7B7002816C9 /* booksTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A08C94329A3E7B7002816C9 /* booksTestData.json */; };
+		2A08C94629A3E827002816C9 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A08C94529A3E827002816C9 /* NetworkTest.swift */; };
 		2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */; };
 		2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451B9A29A0E59400FB716E /* ContentView.swift */; };
 		2A451B9D29A0E59400FB716E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A451B9C29A0E59400FB716E /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A08C94329A3E7B7002816C9 /* booksTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = booksTestData.json; sourceTree = "<group>"; };
+		2A08C94529A3E827002816C9 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		2A451B9529A0E59400FB716E /* TrantorBooksAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrantorBooksAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksAPIApp.swift; sourceTree = "<group>"; };
 		2A451B9A29A0E59400FB716E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 		2A451B9E29A0E59400FB716E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2A08C94329A3E7B7002816C9 /* booksTestData.json */,
 				2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */,
+				2A08C94529A3E827002816C9 /* NetworkTest.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			files = (
 				2A451BA029A0E59400FB716E /* Preview Assets.xcassets in Resources */,
 				2A451B9D29A0E59400FB716E /* Assets.xcassets in Resources */,
+				2A08C94429A3E7B7002816C9 /* booksTestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +189,7 @@
 				2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,
+				2A08C94629A3E827002816C9 /* NetworkTest.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
