@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				2A08C94329A3E7B7002816C9 /* booksTestData.json */,
-				2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */,
 				2A08C94529A3E827002816C9 /* NetworkTest.swift */,
+				2A451B9F29A0E59400FB716E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";

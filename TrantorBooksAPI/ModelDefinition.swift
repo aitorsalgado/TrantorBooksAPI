@@ -18,6 +18,7 @@ struct Book: Codable, Identifiable, Hashable {
     let summary: String?
     let pages: Int?
     let year: Int
+    let price: Double
 }
 
 struct AuthorDetail: Codable, Identifiable, Hashable {
