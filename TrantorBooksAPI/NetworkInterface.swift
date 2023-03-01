@@ -7,6 +7,29 @@
 
 import Foundation
 
+enum APIErrors:Error {
+case general(Error)
+    case json(Error)
+    case nonHTTP
+    case status(Int)
+    case invalidData
+    
+    var description:String {
+        switch self {
+        case .general(let error):
+            return "General error: \(error)"
+        case .json(let error):
+            return "JSON error: \(error)"
+        case .nonHTTP:
+            return "Non HTTP connection."
+        case .status(let int):
+            return "Status error: Code \(int)"
+        case .invalidData:
+            return "Invalid data."
+        }
+    }
+}
+
 let serverURL = URL.productionServer
 
 extension URL {
