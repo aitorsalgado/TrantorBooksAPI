@@ -15,12 +15,12 @@ final class BooksViewModel: ObservableObject {
     @Published var showAlertErrorNetwork = false
     @Published var errorMsg = ""
     
-    
-    init() {
-        Task {
-            await getLatestBooks()
-        }
-    }
+// Don't init for use local data test
+//    init() {
+//        Task {
+//            await getLatestBooks()
+//        }
+//    }
     
     @MainActor func getLatestBooks() async {
         do {
