@@ -18,7 +18,7 @@ struct ContentView: View {
             }
             .navigationTitle("Trantor Latest Books")
             .navigationDestination(for: Book.self) { book in
-                Text(book.title)
+                BookDetailView(booksDetailVM: BooksDetailViewModel(book: book))
             }
             .listStyle(.inset)
         }

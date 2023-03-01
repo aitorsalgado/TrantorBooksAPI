@@ -47,6 +47,6 @@ struct BookRow: View {
 
 struct BookRow_Previews: PreviewProvider {
     static var previews: some View {
-        BookRow(book: Book.bookTest)
+        BookRow(book: .bookTest)
     }
 }
