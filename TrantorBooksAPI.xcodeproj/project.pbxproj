@@ -20,6 +20,7 @@
 		2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */; };
 		2A47BC9E29AFDE08002A7CFA /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */; };
 		2A84809E29B653C1004A9727 /* TrantorBooksAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */; };
+		2A8480A729B669AF004A9727 /* TrantorBooksTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8480A629B669AF004A9727 /* TrantorBooksTabView.swift */; };
 		2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */; };
 		2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		2A84809B29B653C1004A9727 /* TrantorBooksAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrantorBooksAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksAPITests.swift; sourceTree = "<group>"; };
+		2A8480A629B669AF004A9727 /* TrantorBooksTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksTabView.swift; sourceTree = "<group>"; };
 		2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPersistance.swift; sourceTree = "<group>"; };
 		2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,14 +95,12 @@
 		2A451B9729A0E59400FB716E /* TrantorBooksAPI */ = {
 			isa = PBXGroup;
 			children = (
-				2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */,
-				2A451B9A29A0E59400FB716E /* ContentView.swift */,
-				2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */,
+				2A8480A429B6697C004A9727 /* Views */,
 				2A47BC9A29AFDA0E002A7CFA /* ViewComponents */,
 				2AFAE7F829A23F1500B7FA5D /* ViewModels */,
 				2A451BAD29A0F28900FB716E /* Network */,
 				2A451BA829A0EB0E00FB716E /* Model */,
-				2A451B9C29A0E59400FB716E /* Assets.xcassets */,
+				2A8480A529B66989004A9727 /* System */,
 				2A451B9E29A0E59400FB716E /* Preview Content */,
 			);
 			path = TrantorBooksAPI;
@@ -148,6 +148,25 @@
 				2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */,
 			);
 			path = TrantorBooksAPITests;
+			sourceTree = "<group>";
+		};
+		2A8480A429B6697C004A9727 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A8480A629B669AF004A9727 /* TrantorBooksTabView.swift */,
+				2A451B9A29A0E59400FB716E /* ContentView.swift */,
+				2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2A8480A529B66989004A9727 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2A451B9829A0E59400FB716E /* TrantorBooksAPIApp.swift */,
+				2A451B9C29A0E59400FB716E /* Assets.xcassets */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 		2AFAE7F829A23F1500B7FA5D /* ViewModels */ = {
@@ -270,6 +289,7 @@
 				2A08C94629A3E827002816C9 /* NetworkTest.swift in Sources */,
 				2A47BC9E29AFDE08002A7CFA /* BookDetailView.swift in Sources */,
 				2A451B9929A0E59400FB716E /* TrantorBooksAPIApp.swift in Sources */,
+				2A8480A729B669AF004A9727 /* TrantorBooksTabView.swift in Sources */,
 				2A47BC9929AFD231002A7CFA /* BookRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

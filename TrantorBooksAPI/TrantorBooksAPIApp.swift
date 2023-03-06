@@ -13,7 +13,7 @@ struct TrantorBooksAPIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TrantorBooksTabView()
                 .environmentObject(booksVM)
         }
     }
