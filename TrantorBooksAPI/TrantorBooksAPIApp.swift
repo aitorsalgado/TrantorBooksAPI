@@ -14,9 +14,6 @@ struct TrantorBooksAPIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .task {
-                    await booksVM.getLatestBooks()
-                }
                 .environmentObject(booksVM)
         }
     }

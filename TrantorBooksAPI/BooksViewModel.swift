@@ -10,24 +10,41 @@ import SwiftUI
 final class BooksViewModel: ObservableObject {
     let persistance = NetworkPersistance.shared
     
-    @Published var books:[Book] = []
+    @Published var latestBooks:[Book] = []
+    @Published var authors:[AuthorDetail] = []
     
     @Published var showAlertErrorNetwork = false
     @Published var errorMsg = ""
     
-// Don't init for use local data test
-//    init() {
-//        Task {
-//            await getLatestBooks()
-//        }
-//    }
+    
+    init() {
+        Task {
+            await getAllAuthors()
+            await getLatestBooks()
+        }
+    }
     
     @MainActor func getLatestBooks() async {
         do {
-            books = try await persistance.getLatestBooks()
+            latestBooks = try await persistance.getLatestBooks()
         } catch  {
             errorMsg = error.localizedDescription
             showAlertErrorNetwork.toggle()
         }
     }
+    
+    @MainActor func getAllAuthors() async {
+        do {
+            authors = try await persistance.getAllAuthors()
+        } catch {
+            errorMsg = error.localizedDescription
+            showAlertErrorNetwork.toggle()
+        }
+    }
+    
+    //TODO: Test not passed.
+    func getAuthorNameById(id: UUID) -> String {
+        authors.first(where: { $0.id == id })?.name ?? "Author unkown"
+    }
+    
 }

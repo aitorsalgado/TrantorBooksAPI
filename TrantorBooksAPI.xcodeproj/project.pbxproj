@@ -19,10 +19,20 @@
 		2A47BC9929AFD231002A7CFA /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9829AFD231002A7CFA /* BookRow.swift */; };
 		2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */; };
 		2A47BC9E29AFDE08002A7CFA /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */; };
-		2A47BCA029AFEEBF002A7CFA /* AuthorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9F29AFEEBF002A7CFA /* AuthorDetailViewModel.swift */; };
+		2A84809E29B653C1004A9727 /* TrantorBooksAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */; };
 		2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */; };
 		2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A84809F29B653C1004A9727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A451B8D29A0E59400FB716E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A451B9429A0E59400FB716E;
+			remoteInfo = TrantorBooksAPI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A08C94329A3E7B7002816C9 /* booksTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = booksTestData.json; sourceTree = "<group>"; };
@@ -38,13 +48,21 @@
 		2A47BC9829AFD231002A7CFA /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDetailViewModel.swift; sourceTree = "<group>"; };
 		2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
-		2A47BC9F29AFEEBF002A7CFA /* AuthorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailViewModel.swift; sourceTree = "<group>"; };
+		2A84809B29B653C1004A9727 /* TrantorBooksAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrantorBooksAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksAPITests.swift; sourceTree = "<group>"; };
 		2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPersistance.swift; sourceTree = "<group>"; };
 		2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A451B9229A0E59400FB716E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A84809829B653C1004A9727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2A451B9729A0E59400FB716E /* TrantorBooksAPI */,
+				2A84809C29B653C1004A9727 /* TrantorBooksAPITests */,
 				2A451B9629A0E59400FB716E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2A451B9529A0E59400FB716E /* TrantorBooksAPI.app */,
+				2A84809B29B653C1004A9727 /* TrantorBooksAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,12 +142,19 @@
 			name = ViewComponents;
 			sourceTree = "<group>";
 		};
+		2A84809C29B653C1004A9727 /* TrantorBooksAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */,
+			);
+			path = TrantorBooksAPITests;
+			sourceTree = "<group>";
+		};
 		2AFAE7F829A23F1500B7FA5D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */,
 				2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */,
-				2A47BC9F29AFEEBF002A7CFA /* AuthorDetailViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -152,6 +179,24 @@
 			productReference = 2A451B9529A0E59400FB716E /* TrantorBooksAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2A84809A29B653C1004A9727 /* TrantorBooksAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8480A329B653C1004A9727 /* Build configuration list for PBXNativeTarget "TrantorBooksAPITests" */;
+			buildPhases = (
+				2A84809729B653C1004A9727 /* Sources */,
+				2A84809829B653C1004A9727 /* Frameworks */,
+				2A84809929B653C1004A9727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A8480A029B653C1004A9727 /* PBXTargetDependency */,
+			);
+			name = TrantorBooksAPITests;
+			productName = TrantorBooksAPITests;
+			productReference = 2A84809B29B653C1004A9727 /* TrantorBooksAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,6 +209,10 @@
 				TargetAttributes = {
 					2A451B9429A0E59400FB716E = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					2A84809A29B653C1004A9727 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2A451B9429A0E59400FB716E;
 					};
 				};
 			};
@@ -181,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				2A451B9429A0E59400FB716E /* TrantorBooksAPI */,
+				2A84809A29B653C1004A9727 /* TrantorBooksAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +246,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A84809929B653C1004A9727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,7 +264,6 @@
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
-				2A47BCA029AFEEBF002A7CFA /* AuthorDetailViewModel.swift in Sources */,
 				2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,
@@ -218,7 +274,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A84809729B653C1004A9727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A84809E29B653C1004A9727 /* TrantorBooksAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A8480A029B653C1004A9727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A451B9429A0E59400FB716E /* TrantorBooksAPI */;
+			targetProxy = 2A84809F29B653C1004A9727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2A451BA129A0E59400FB716E /* Debug */ = {
@@ -393,6 +465,42 @@
 			};
 			name = Release;
 		};
+		2A8480A129B653C1004A9727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG727TW3U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AitorSalgado.TrantorBooksAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrantorBooksAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrantorBooksAPI";
+			};
+			name = Debug;
+		};
+		2A8480A229B653C1004A9727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG727TW3U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AitorSalgado.TrantorBooksAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrantorBooksAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrantorBooksAPI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +518,15 @@
 			buildConfigurations = (
 				2A451BA429A0E59400FB716E /* Debug */,
 				2A451BA529A0E59400FB716E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8480A329B653C1004A9727 /* Build configuration list for PBXNativeTarget "TrantorBooksAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8480A129B653C1004A9727 /* Debug */,
+				2A8480A229B653C1004A9727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,9 +11,9 @@ struct ContentView: View {
     @EnvironmentObject var booksVM:BooksViewModel
     var body: some View {
         NavigationStack {
-            List(booksVM.books){ book in
+            List(booksVM.latestBooks){ book in
                 NavigationLink(value: book) {
-                    BookRow(book: book)
+                    BookRow(bookDetailViewModel: BooksDetailViewModel(book: book))
                 }
             }
             .navigationTitle("Trantor Latest Books")
@@ -37,8 +37,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(booksVMPreview)
-            .task {
-                await booksVMPreview.getLatestBooks()
-            }
     }
 }
