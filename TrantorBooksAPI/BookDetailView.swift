@@ -12,6 +12,7 @@ struct BookDetailView: View {
     
     var body: some View {
         Text(booksDetailVM.book.title)
+            .font(.title)
     }
 }
 

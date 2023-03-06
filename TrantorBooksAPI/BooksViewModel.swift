@@ -11,22 +11,43 @@ final class BooksViewModel: ObservableObject {
     let persistance = NetworkPersistance.shared
     
     @Published var latestBooks:[Book] = []
+    @Published var allBooks:[Book] = []
     @Published var authors:[AuthorDetail] = []
     
     @Published var showAlertErrorNetwork = false
     @Published var errorMsg = ""
+    
+    @Published var searchBookTitle = ""
+    
+    var filteredBooks:[Book] {
+        if searchBookTitle.isEmpty {
+            return allBooks.sorted( by: { $0.id < $1.id } )
+        }
+        return []
+    }
+    
     
     
     init() {
         Task {
             await getAllAuthors()
             await getLatestBooks()
+            await getAllBooks()
         }
     }
     
     @MainActor func getLatestBooks() async {
         do {
             latestBooks = try await persistance.getLatestBooks()
+        } catch  {
+            errorMsg = error.localizedDescription
+            showAlertErrorNetwork.toggle()
+        }
+    }
+    
+    @MainActor func getAllBooks() async {
+        do {
+            allBooks = try await persistance.getAllBooks()
         } catch  {
             errorMsg = error.localizedDescription
             showAlertErrorNetwork.toggle()

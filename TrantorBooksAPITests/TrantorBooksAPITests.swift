@@ -35,9 +35,19 @@ final class TrantorBooksAPITests: XCTestCase {
         XCTAssertTrue(latestBooks.count == 20)
     }
     
+    func testGetAllBooks() async throws {
+        let allBooks = try await network.getAllBooks()
+        XCTAssertTrue(allBooks.first(where: {$0.id == 3})?.title == "A Princess of Mars" )
+    }
+    
     func testGetAllAuthors() async throws {
         let authors = try await network.getAllAuthors()
         XCTAssertTrue(authors.count == 293)
+    }
+    
+    func testGetBooksByTitle() async throws {
+        let booksByTitle = try await network.getBooksByTitle(titleToSearch: "Tales of Space and Time")
+        XCTAssertTrue(booksByTitle.count == 1)
     }
 
 //    func testGetAuthorNameById() async throws {
