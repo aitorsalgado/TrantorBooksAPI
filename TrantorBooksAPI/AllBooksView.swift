@@ -16,7 +16,7 @@ struct AllBooksView: View {
                     BookRow(bookDetailViewModel: BooksDetailViewModel(book: book))
                 }
             }
-            .navigationTitle("Trantor Latest Books")
+            .navigationTitle("Trantor All Books")
             .navigationDestination(for: Book.self) { book in
                 BookDetailView(booksDetailVM: BooksDetailViewModel(book: book))
             }

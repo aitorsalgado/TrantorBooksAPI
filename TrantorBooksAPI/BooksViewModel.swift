@@ -23,7 +23,9 @@ final class BooksViewModel: ObservableObject {
         if searchBookTitle.isEmpty {
             return allBooks.sorted( by: { $0.id < $1.id } )
         }
-        return []
+        return allBooks.filter { book in
+            book.title.lowercased().contains(searchBookTitle.lowercased())
+        }.sorted( by: { $0.id < $1.id } )
     }
     
     
@@ -51,6 +53,16 @@ final class BooksViewModel: ObservableObject {
         } catch  {
             errorMsg = error.localizedDescription
             showAlertErrorNetwork.toggle()
+        }
+    }
+    
+    @MainActor func getBooksByTitle(titleToSearch: String) async -> [Book] {
+        do {
+            return try await persistance.getBooksByTitle(titleToSearch: titleToSearch)
+        } catch  {
+            errorMsg = error.localizedDescription
+            showAlertErrorNetwork.toggle()
+            return []
         }
     }
     

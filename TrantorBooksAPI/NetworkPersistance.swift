@@ -51,8 +51,23 @@ final class NetworkPersistance {
     }
     
     func getBooksByTitle(titleToSearch:String) async throws -> [Book] {
-        let (data, _) = try await URLSession.shared.data(from: .getBooksByTitle(titleToSearch: titleToSearch))
-        return try JSONDecoder().decode([Book].self, from: data)
+        do {
+            let (data, response) = try await URLSession.shared.data(from: .getBooksByTitle(titleToSearch: titleToSearch))
+            guard let response = response as? HTTPURLResponse else { throw APIErrors.nonHTTP }
+            if response.statusCode == 200 {
+                do {
+                    return try JSONDecoder().decode([Book].self, from: data)
+                } catch {
+                    throw APIErrors.json(error)
+                }
+            } else {
+                throw APIErrors.status(response.statusCode)
+            }
+        } catch let error as APIErrors {
+            throw error
+        } catch {
+            throw APIErrors.general(error)
+        }
     }
     
     func getAllAuthors() async throws -> [AuthorDetail] {
