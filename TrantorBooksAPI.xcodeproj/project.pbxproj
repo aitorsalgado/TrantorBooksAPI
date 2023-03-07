@@ -19,6 +19,8 @@
 		2A47BC9929AFD231002A7CFA /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9829AFD231002A7CFA /* BookRow.swift */; };
 		2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */; };
 		2A47BC9E29AFDE08002A7CFA /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */; };
+		2A4FACC729B7A5420053679F /* AuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FACC629B7A5420053679F /* AuthorsView.swift */; };
+		2A4FACC929B7A9F50053679F /* BooksByAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FACC829B7A9F50053679F /* BooksByAuthor.swift */; };
 		2A84809E29B653C1004A9727 /* TrantorBooksAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */; };
 		2A8480A729B669AF004A9727 /* TrantorBooksTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8480A629B669AF004A9727 /* TrantorBooksTabView.swift */; };
 		2A8480A929B67402004A9727 /* AllBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8480A829B67402004A9727 /* AllBooksView.swift */; };
@@ -50,6 +52,8 @@
 		2A47BC9829AFD231002A7CFA /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		2A47BC9B29AFDD5B002A7CFA /* BooksDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDetailViewModel.swift; sourceTree = "<group>"; };
 		2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		2A4FACC629B7A5420053679F /* AuthorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsView.swift; sourceTree = "<group>"; };
+		2A4FACC829B7A9F50053679F /* BooksByAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksByAuthor.swift; sourceTree = "<group>"; };
 		2A84809B29B653C1004A9727 /* TrantorBooksAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrantorBooksAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A84809D29B653C1004A9727 /* TrantorBooksAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksAPITests.swift; sourceTree = "<group>"; };
 		2A8480A629B669AF004A9727 /* TrantorBooksTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrantorBooksTabView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				2A451B9A29A0E59400FB716E /* ContentView.swift */,
 				2A8480A829B67402004A9727 /* AllBooksView.swift */,
 				2A47BC9D29AFDE08002A7CFA /* BookDetailView.swift */,
+				2A4FACC629B7A5420053679F /* AuthorsView.swift */,
+				2A4FACC829B7A9F50053679F /* BooksByAuthor.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -284,9 +290,11 @@
 			files = (
 				2A451B9B29A0E59400FB716E /* ContentView.swift in Sources */,
 				2A8480A929B67402004A9727 /* AllBooksView.swift in Sources */,
+				2A4FACC929B7A9F50053679F /* BooksByAuthor.swift in Sources */,
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
+				2A4FACC729B7A5420053679F /* AuthorsView.swift in Sources */,
 				2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,

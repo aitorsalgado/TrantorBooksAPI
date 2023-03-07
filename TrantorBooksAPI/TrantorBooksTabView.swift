@@ -18,7 +18,7 @@ struct TrantorBooksTabView: View {
                 .tabItem {
                     Label("Library", systemImage: "books.vertical.fill")
                 }
-            Text("By Author")
+            AuthorsView()
                 .tabItem {
                     Label("Author", systemImage: "character.book.closed.fill")
                 }

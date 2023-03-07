@@ -17,7 +17,6 @@ struct BookDetailView: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 400, height: 400)
                 } placeholder: {
                     Image(systemName: "text.book.closed")
                         .resizable()
@@ -57,6 +56,8 @@ struct BookDetailView: View {
                 }
             }
         }
+        .navigationTitle(booksDetailVM.book.title)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -22,14 +22,13 @@ final class BooksViewModel: ObservableObject {
     var filteredBooks:[Book] {
         if searchBookTitle.isEmpty {
             return allBooks.sorted( by: { $0.id < $1.id } )
+        } else {
+            return allBooks.filter { book in
+                book.title.lowercased().contains(searchBookTitle.lowercased())
+            }.sorted( by: { $0.id < $1.id } )
         }
-        return allBooks.filter { book in
-            book.title.lowercased().contains(searchBookTitle.lowercased())
-        }.sorted( by: { $0.id < $1.id } )
     }
-    
-    
-    
+        
     init() {
         Task {
             await getAllAuthors()
@@ -80,4 +79,9 @@ final class BooksViewModel: ObservableObject {
         authors.first(where: { $0.id == id })?.name ?? "Author unkown"
     }
     
+    func allBooksByAuthor(authorId: UUID) -> [Book] {
+        filteredBooks.filter { book in
+            book.author == authorId
+        }
+    }
 }
