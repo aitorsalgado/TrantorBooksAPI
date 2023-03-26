@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum HttpMethod:String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
+}
+
 enum APIErrors:Error {
 case general(Error)
     case json(Error)
@@ -46,5 +53,16 @@ extension URL {
     
     static func getAuthorDetailByID(id: UUID) -> URL {
         serverURL.appending(component: "books").appending(component: "getAuthor").appending(component: "\(id)")
+    }
+}
+
+extension URLRequest {
+    static func request<T:Codable>(url:URL, method: HttpMethod ,body:T ) -> URLRequest {
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        request.httpBody = try? JSONEncoder().encode(body)
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        return request
     }
 }
