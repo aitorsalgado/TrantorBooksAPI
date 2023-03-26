@@ -57,7 +57,15 @@ extension URL {
 }
 
 extension URLRequest {
-    static func request<T:Codable>(url:URL, method: HttpMethod ,body:T ) -> URLRequest {
+    static func requestGET(url:URL, method: HttpMethod = .get) -> URLRequest {
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        return request
+    }
+    
+    static func requestWithBody<T:Codable>(url:URL, method: HttpMethod ,body:T ) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.httpBody = try? JSONEncoder().encode(body)

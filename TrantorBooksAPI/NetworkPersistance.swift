@@ -91,12 +91,19 @@ final class NetworkPersistance {
     }
     
     func getAuthorDetailByID(id:UUID) async throws -> AuthorDetail {
+        try await queryJSON(request: .requestGET(url: .getAuthorDetailByID(id: id)), type: AuthorDetail.self)
+    }
+    
+    func queryJSON<T:Codable>(request: URLRequest,
+                              type: T.Type,
+                              decoder: JSONDecoder = JSONDecoder(),
+                              statusOK:Int = 200 ) async throws -> T {
         do {
-            let (data, response) = try await URLSession.shared.data(from: .getAuthorDetailByID(id: id))
+            let (data, response) = try await URLSession.shared.data(for: request)
             guard let response = response as? HTTPURLResponse else { throw APIErrors.nonHTTP }
             if response.statusCode == 200 {
                 do {
-                    return try JSONDecoder().decode(AuthorDetail.self, from: data)
+                    return try decoder.decode(type, from: data)
                 } catch {
                     throw APIErrors.json(error)
                 }
