@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var booksVM:BooksViewModel
+    @State var showUserMenu = false
     var body: some View {
         NavigationStack {
             List(booksVM.latestBooks){ book in
@@ -21,6 +22,17 @@ struct ContentView: View {
                 BookDetailView(booksDetailVM: BooksDetailViewModel(book: book))
             }
             .listStyle(.inset)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        showUserMenu.toggle()
+                    } label: {
+                        Image(systemName:"person.circle")
+                            .tint(Color.gray)
+                    }
+                    .padding()
+                }
+            }
         }
         .alert("Network Error", isPresented: $booksVM.showAlertErrorNetwork) {
             Button(action: {}) {
@@ -28,6 +40,9 @@ struct ContentView: View {
             }
         } message: {
             Text(booksVM.errorMsg)
+        }
+        .sheet(isPresented: $showUserMenu) {
+            LoginUserView()
         }
     }
 }
