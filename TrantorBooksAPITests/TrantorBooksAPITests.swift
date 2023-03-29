@@ -61,6 +61,16 @@ final class TrantorBooksAPITests: XCTestCase {
         await bookDetailVM.getAuthorDetailNameByID(id: authorDetailTest.id)
         XCTAssertEqual(bookDetailVM.authorName, authorDetailTest.name)
     }
+    
+    func testGetUserDetail() async throws {
+        let testUserEmail = "barril_establecer0o@icloud.com"
+        let testUserSend = UserDetail(email:testUserEmail)
+            let testUserDetail = try await network.getUserInfo(userDetail: testUserSend)
+            XCTAssertTrue(testUserDetail.email == testUserEmail)
+            XCTAssertTrue(testUserDetail.role == "admin")
+            XCTAssertTrue(testUserDetail.name == "Aitor Salgado")
+            XCTAssertTrue(testUserDetail.location == "Segunda Fundación")
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

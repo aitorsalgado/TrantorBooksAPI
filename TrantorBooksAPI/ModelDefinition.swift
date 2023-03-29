@@ -31,3 +31,10 @@ struct AuthorDetail: Codable, Identifiable, Hashable {
     let id: UUID
     let name: String
 }
+
+struct UserDetail: Codable {
+    let email:String
+    var location:String? = nil
+    var name:String? = nil
+    var role: String? = nil
+}

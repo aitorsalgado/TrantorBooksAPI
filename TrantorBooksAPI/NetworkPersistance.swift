@@ -30,6 +30,10 @@ final class NetworkPersistance {
         try await queryJSON(request: .requestGET(url: .getAuthorDetailByID(id: id)), type: AuthorDetail.self)
     }
     
+    func getUserInfo(userDetail:UserDetail) async throws -> UserDetail {
+        try await queryJSON(request: .requestWithBody(url: .getUserInfo, method: .post, body: userDetail), type: UserDetail.self)
+    }
+    
     func queryJSON<T:Codable>(request: URLRequest,
                               type: T.Type,
                               decoder: JSONDecoder = JSONDecoder(),

@@ -46,6 +46,8 @@ extension URL {
     static let getBooks = serverURL.appending(component: "books").appending(component: "list")
     static let getAuthors = serverURL.appending(component: "books").appending(component: "authors")
     
+    static let getUserInfo = serverURL.appending(component: "client").appending(component: "query")
+    
     static func getBooksByTitle(titleToSearch:String) -> URL {
         //Not necessary lowercased because the API is not case sensitive
         serverURL.appending(component: "books").appending(component: "find").appending(component: "\(titleToSearch)")
