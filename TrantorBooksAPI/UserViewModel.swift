@@ -11,8 +11,12 @@ final class UserViewModel: ObservableObject {
     let persistance = NetworkPersistance.shared
     var user:UserDetail
     
-    init(user:UserDetail) {
-        self.user = user
+    @Published var showAlerUser = false
+    @Published var userAlertMsg = ""
+    @Published var userAlertHeadMsg = ""
+    
+    init() {
+        user = UserDetail(email: "")
     }
     
     @MainActor func authenticateUser(userEmail:String) async -> Bool {
@@ -20,6 +24,9 @@ final class UserViewModel: ObservableObject {
             user  = try await persistance.getUserInfo(userDetail: UserDetail(email: userEmail))
             return true
         } catch {
+            userAlertMsg = error.localizedDescription.description
+            userAlertHeadMsg = "User Invalid"
+            showAlerUser.toggle()
             return false
         }
     }

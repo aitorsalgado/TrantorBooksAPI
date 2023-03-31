@@ -7,45 +7,37 @@
 
 import SwiftUI
 
+enum Screens {
+    case login
+    case create
+    case detail
+}
+
 struct LoginUserView: View {
-    //@ObservedObject var userVM:UserViewModel
-    @State var userEmail = ""
+    @State var screen:Screens = .login
     
     var body: some View {
-        VStack() {
-            Text("Login")
-                .font(.largeTitle)
-                .bold()
-            GroupBox() {
-                Text("User")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity,alignment: .leading)
-                TextField("Enter your user email address", text: $userEmail)
-                    .textContentType(.username)
-                    .autocorrectionDisabled()
-                    .textInputAutocapitalization(.never)
-                    .keyboardType(.emailAddress)
+        Group {
+            switch screen {
+            case .login:
+                LoginComponent()
                 Button {
-                    
+                    screen = .create
                 } label: {
-                    Text("Access")
+                    Text("Create an account")
                 }
-                .buttonStyle(.borderedProminent)
-                .padding(.top)
-
-            } label: {
-                Text("Start buying some books!")
-                    .bold()
-                    .padding(.bottom)
+            case .create:
+                CreateUserView()
+            case .detail:
+                Text("Not today")
             }
-            .textFieldStyle(.roundedBorder)
         }
-        .padding()
     }
 }
 
 struct LoginUserView_Previews: PreviewProvider {
     static var previews: some View {
         LoginUserView()
+            .environmentObject(UserViewModel())
     }
 }

@@ -26,6 +26,8 @@
 		2A8480A929B67402004A9727 /* AllBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8480A829B67402004A9727 /* AllBooksView.swift */; };
 		2A8864DF29D4B001008C2767 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8864DE29D4B001008C2767 /* UserViewModel.swift */; };
 		2AB17F0329D34B7500B917C7 /* LoginUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB17F0229D34B7500B917C7 /* LoginUserView.swift */; };
+		2AF196FD29D7573B001E47D9 /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF196FC29D7573B001E47D9 /* CreateUserView.swift */; };
+		2AF1970129D75C4E001E47D9 /* LoginComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1970029D75C4E001E47D9 /* LoginComponent.swift */; };
 		2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */; };
 		2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		2A8480A829B67402004A9727 /* AllBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksView.swift; sourceTree = "<group>"; };
 		2A8864DE29D4B001008C2767 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2AB17F0229D34B7500B917C7 /* LoginUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserView.swift; sourceTree = "<group>"; };
+		2AF196FC29D7573B001E47D9 /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
+		2AF1970029D75C4E001E47D9 /* LoginComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginComponent.swift; sourceTree = "<group>"; };
 		2AFAE7F629A23DEF00B7FA5D /* NetworkPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPersistance.swift; sourceTree = "<group>"; };
 		2AFAE7FB29A23F7F00B7FA5D /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2A47BC9829AFD231002A7CFA /* BookRow.swift */,
+				2AF1970029D75C4E001E47D9 /* LoginComponent.swift */,
 			);
 			name = ViewComponents;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				2A4FACC629B7A5420053679F /* AuthorsView.swift */,
 				2A4FACC829B7A9F50053679F /* BooksByAuthor.swift */,
 				2AB17F0229D34B7500B917C7 /* LoginUserView.swift */,
+				2AF196FC29D7573B001E47D9 /* CreateUserView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 				2A451BAA29A0EDC100FB716E /* ModelOperations.swift in Sources */,
 				2A47BC9C29AFDD5B002A7CFA /* BooksDetailViewModel.swift in Sources */,
 				2A451BA729A0E86A00FB716E /* ModelDefinition.swift in Sources */,
+				2AF196FD29D7573B001E47D9 /* CreateUserView.swift in Sources */,
 				2A4FACC729B7A5420053679F /* AuthorsView.swift in Sources */,
+				2AF1970129D75C4E001E47D9 /* LoginComponent.swift in Sources */,
 				2AFAE7FC29A23F7F00B7FA5D /* BooksViewModel.swift in Sources */,
 				2A451BAC29A0F1C600FB716E /* NetworkInterface.swift in Sources */,
 				2AFAE7F729A23DEF00B7FA5D /* NetworkPersistance.swift in Sources */,

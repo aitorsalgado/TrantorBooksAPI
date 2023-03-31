@@ -38,3 +38,9 @@ struct UserDetail: Codable {
     var name:String? = nil
     var role: String? = nil
 }
+
+#if debug
+extension UserDetail {
+    static let userTest = UserDetail(email: "barril_establecer0o@icloud.com", location: "Segunda Fundación", name: "Aitor Salgado", role: "admin")
+}
+#endif
